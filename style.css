@@ -146,8 +146,7 @@ h1{
 .pharagraph1, .pharagraph2, .pharagraph3, .pharagraph4{
     box-shadow: 0 0 20px 5px;
     width: 320px;
-    height: 350px;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 45px 20px 45px;
     background-color: #24262b;
     height: 360px;
 }
@@ -188,7 +187,7 @@ h6{
     line-height: 40px;
     font-style: italic;
     text-align: center;
-    color:#24262b;
+    color:#b9b9b9;
 }
 
 .pharagraph5i, .pharagraph6i, .pharagraph7i, .pharagraph8i, .pharagraph9i{
@@ -343,13 +342,58 @@ ul{
     margin-right: 150px;
 }
 
-.istorijat{
-    text-align:justify;
+.read-more-container{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
 }
-.istorijatt{
+.container1{
+    
     margin: 50px 25% 0 25%;
-    padding: 20px;
+    padding: 15px;
+    background-color: #24262b;
+    border-radius: 20px;
+    line-height: 20px;
+    box-shadow: 0 0 1px #b9b9b9;
 }
+.container1 h3{
+    color:#ffffff;
+    line-height: 30px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.read-more-btn{
+    color:#24262b;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.read-more-text{
+    display: none;
+}
+.read-more-text--show{
+    display: inline;
+}
+details > summary{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin: 70px 550px 0 550px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.content-details{
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 
 @media screen and (max-width:1920px){
     body{
@@ -367,7 +411,7 @@ ul{
     .pharagraph8, .pharagraph6, .pharagraph9, .pharagraph7, .pharagraph5{
         height: 365px;
     }
-    .istorijatt{
+    .container1{
         margin: 50px 20% 0 20%;
         padding: 20px;
     }
@@ -386,9 +430,9 @@ ul{
 @media screen and (max-width:1010px){
     .pharagraph8, .pharagraph6, .pharagraph9, .pharagraph7, .pharagraph5{
         width: 100%;
-        height: 230px;
+        height: 260px;
     }
-    .istorijatt{
+    .container1{
         margin: 50px 10% 0 10%;
         padding: 20px;
     } 
@@ -450,7 +494,7 @@ ul{
     }
     .pharagraph8, .pharagraph6, .pharagraph9, .pharagraph7, .pharagraph5{
         width: 100%;
-        height: 250px;
+        height: 270px;
     } 
 }
 @media only screen and (max-width:554px){
@@ -461,9 +505,10 @@ ul{
     .middle1{
         width:80%;
     }
-    .istorijatt{
+    .container1{
         margin: 50px 2% 0 2%;
         padding: 20px;
+        letter-spacing: 0px;
     }
 }
 
@@ -489,6 +534,17 @@ ul{
 .pharagraph5, .pharagraph6, .pharagraph7, .pharagraph8, .pharagraph9{
     height:300px;
 }
+}
+@media only screen and (max-width:322px){
+    .pharagraph1, .pharagraph2, .pharagraph3, .pharagraph4{
+        height: 380px;
+    }
+}
+@media only screen and (max-width:310px){
+    .pharagraph8, .pharagraph6, .pharagraph9, .pharagraph7, .pharagraph5{
+        width: 100%;
+        height:330px;
+    }
 }
 
 
